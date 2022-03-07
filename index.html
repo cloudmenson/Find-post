@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="promise.jpeg" type="image/png">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Promise</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="find-comment">
+        <div class="input-field find__comment-wrapper">
+          <input id="find-id" type="number" min="1" max="100" required>
+          <button class="find__comment-button btn waves-effect waves-light" type="submit" name="action">Find</button>
+          <div id="preloader">
+            <div class="preloader-wrapper small active">
+              <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="find__suptitle">Find a post from 1 to 100</p>
+      </form>
+      <div class="find__content-wrapper">
+        <div class="post-wrapper"></div>
+        <div class="comment-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
