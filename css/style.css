@@ -1,0 +1,115 @@
+body {
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#preloader {
+  margin: 6px 20px 0;
+  display: none;
+}
+.find-comment {
+  margin: 0 0 80px;
+}
+#find-id {
+  width: 70px;
+  text-align: center;
+}
+.find__comment-wrapper {
+  display: flex;
+  align-items: center;
+}
+.find__comment-button {
+  margin: 0 15px;
+}
+.find__suptitle {
+  font-size: 11px;
+  margin: 0;
+}
+.user__card-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(210, 210, 210, 0.904);
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+}
+.user__post-body {
+  border: 1px solid rgba(210, 210, 210, 0.904);
+  border-radius: 2px;
+  padding: 15px 15px;
+  margin: 20px 0;
+}
+.user__post-email {
+  font-size: 18px;
+  color: #00a1a1;
+}
+.find__content-wrapper {
+  margin: 0 50px;
+}
+.user__post-div {
+  display: flex;
+  align-items: center;
+}
+.material-icons {
+  font-size: 35px;
+  margin-right: 5px;
+}
+.user__post-comment::first-letter {
+  text-transform: uppercase;
+  font-size: 150%;
+}
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .user__card-title {
+    font-size: 18px;
+  }
+  .user__post-comment {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .user__card-title {
+    font-size: 15px;
+  }
+  .user__post-comment {
+    font-size: 13px;
+  }
+  .user__post-email {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .user__card-title {
+    letter-spacing: 1px;
+    text-transform: none;
+    font-size: 14px;
+  }
+  .user__post-body {
+    padding: 10px 7px;
+  }
+  .material-icons {
+    font-size: 25px;
+    margin-right: 5px;
+    margin-top: 3px;
+  }
+  #find-id {
+    width: 100%;
+  }
+  .find__comment-button {
+    margin: 0 10px;
+    width: 100%;
+  }
+  .find__content-wrapper {
+    margin: 0px 15px;
+  }
+}
+@media (max-width: 380px) {
+  .find__content-wrapper {
+    margin: 0;
+  }
+  .find__comment-button {
+    width: 50%;
+  }
+}
